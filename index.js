@@ -11,6 +11,8 @@ var keyclick = this.innerHTML;
 
 playsound(keyclick);
 
+animation(keyclick);
+
 });
 }
 /*var audio = new Audio("sounds/tom-1.mp3");
@@ -39,6 +41,8 @@ function press () {
 
 document.addEventListener("keypress", function (event){
    playsound(event.key);
+
+   animation(event.key);
 });
 
 
@@ -83,4 +87,15 @@ function playsound(key) {
           break;
   }
   
+}
+
+
+function animation(currentkey) {
+    var activebutton = document.querySelector("." + currentkey);
+
+    activebutton.classList.add("pressed");
+
+    setTimeout (function (){
+      activebutton.classList.remove("pressed");
+    },100);
 }
