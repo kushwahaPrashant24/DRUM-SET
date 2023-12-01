@@ -1,9 +1,16 @@
 body {
   text-align: center;
+  background-image: url(./images/back-ground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   
-background: rgb(9,173,149);
-background: linear-gradient(90deg, rgba(9,173,149,1) 7%, rgba(144,144,185,1) 40%, rgba(149,204,165,1) 74%);
+
+/*background: rgb(9,173,149);
+background: linear-gradient(90deg, rgba(9,173,149,1) 7%, rgba(144,144,185,1) 40%, rgba(149,204,165,1) 74%);*/
 }
+
+
+
 
 h1 {
   font-size: 5rem;
@@ -18,15 +25,15 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
+.a {
  background-image: url(./images/crash.png);
 }
 
-.a {
+.s {
 background-image: url(./images/kick.png);
 }
 
-.s {
+.d {
    background-image: url(./images/snare.png);
 }
 

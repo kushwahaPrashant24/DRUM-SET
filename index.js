@@ -1,6 +1,7 @@
 
 var presstheno = document.querySelectorAll(".drum").length;
 
+
 for ( var i = 0 ; i< presstheno; i++) {
 
 document.querySelectorAll(".drum")[i].addEventListener("click", function (){
@@ -8,6 +9,7 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function (){
 
 
 var keyclick = this.innerHTML;
+
 
 playsound(keyclick);
 
@@ -48,22 +50,22 @@ document.addEventListener("keypress", function (event){
 
 function playsound(key) {
    switch (key) {
-      case "w":
+      case "a":
           var crash = new Audio("sounds/crash.mp3");
           crash.play();
           break;
   
-       case "a":
+       case "s":
           var kick = new Audio("sounds/kick-bass.mp3");
           kick.play();
           break;
           
-       case "s":
+       case "d":
           var snare = new Audio("sounds/snare.mp3");
           snare.play();
           break;
           
-       case "d":
+       case "f":
           var tom1 = new Audio("sounds/tom-1.mp3");
           tom1.play();  
           break;
